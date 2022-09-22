@@ -6,7 +6,7 @@ const AuthorModel = require("../model/author");
 
 const Book_mutation = new gql.GraphQLObjectType({
     name: "mutation_ofBook", 
-    fields:{
+    fields:()=>({
         addBook:{
             type: types.BookType,
             args:{
@@ -36,12 +36,12 @@ const Book_mutation = new gql.GraphQLObjectType({
                 return results.deletedCount;
             }
         },
-    }
+    })
 });
 
 const AuthorMutation = new gql.GraphQLObjectType({
     name: "AutherMutation", 
-    fields:{
+    fields:()=>({
         addAuthor:{
             type:types.AuthorType,
             args:{
@@ -65,13 +65,14 @@ const AuthorMutation = new gql.GraphQLObjectType({
                 id: {type: gql.GraphQLInt}, 
             },
             resolve:async(parant, args)=>{
+                console.log("dlt author");
                 let results = await AuthorModel.deleteOne({
                     id: args.id, 
                 });
-                return results.deletedCount;
+                return results;
             }
         }
-    }
+    })
 })
 
 
