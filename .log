@@ -6,3 +6,20 @@ playingwithgraphql@1.0.0
 └── https://github.com/sponsors/ljharb
     └── qs@6.10.3, side-channel@1.0.4, call-bind@1.0.2, get-intrinsic@1.1.3, has-symbols@1.0.3, object-inspect@1.12.2
 
+SerVerStarTed
+::1 - - [Thu, 22 Sep 2022 18:14:04 GMT] "GET /graphql?query=%0A%7B%0A%20%20getBooks%7B%0A%20%20%20%20name%0A%20%20%20%20author%7B%0A%20%20%20%20%20%20first_name%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D HTTP/1.1" 200 929211 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 18:14:06 GMT] "POST /graphql? HTTP/1.1" 200 19992 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 18:14:32 GMT] "POST /graphql? HTTP/1.1" 200 67 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 18:14:57 GMT] "POST /graphql? HTTP/1.1" 200 238 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 18:15:15 GMT] "POST /graphql? HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 18:15:54 GMT] "POST /graphql? HTTP/1.1" 200 259 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+::1 - - [Thu, 22 Sep 2022 19:48:02 GMT] "GET /graphql?query=%7B%20%20getBook(id%3A%203)%20%7B%0A%20%20%20%20name%0A%20%20%20%20author%20%7B%0A%20%20%20%20%20%20first_name%0A%20%20%20%20%20%20books%20%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A HTTP/1.1" 500 928331 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 19:48:03 GMT] "POST /graphql? HTTP/1.1" 500 207 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 19:48:03 GMT] "POST /graphql? HTTP/1.1" 500 207 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 19:48:07 GMT] "POST /graphql? HTTP/1.1" 500 207 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+::1 - - [Thu, 22 Sep 2022 19:49:16 GMT] "GET /graphql?query=%7B%20%20getBook(id%3A%203)%20%7B%0A%20%20%20%20name%0A%20%20%20%20author%20%7B%0A%20%20%20%20%20%20first_name%0A%20%20%20%20%20%20books%20%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A HTTP/1.1" 500 928208 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 19:49:17 GMT] "POST /graphql? HTTP/1.1" 500 109 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Thu, 22 Sep 2022 19:49:17 GMT] "POST /graphql? HTTP/1.1" 500 109 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed

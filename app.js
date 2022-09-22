@@ -1,6 +1,7 @@
 const xgql = require("express-graphql");
 const mongoose = require("mongoose");
 const express = require("express");
+const morgan = require("morgan")
 require("dotenv").config()
 mongoose.pluralize(null);
 
@@ -15,6 +16,7 @@ run()
 async function run() {
     await mongoose.connect(process.env.MONGODB_URI);
     express()
+    .use(morgan())
     .use("/graphql", xgql.graphqlHTTP({
         schema: graphqlSchema,
         graphiql: true,
