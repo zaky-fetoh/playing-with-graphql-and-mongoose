@@ -15,11 +15,14 @@ const authorSchema = mongoose.Schema({
     last_name: {
         type: String,
         required: true,
+    },
+    id:{
+        type:Number,
     }
 });
 
 const joiAuthor = joi.object({
-    _id: any(),
+    _id: joi.any(), id:joi.any(),
     first_name: joi.string().max(265).min(3).required(),
     last_name: joi.string().max(256).min(3).required(),
 })
@@ -30,4 +33,4 @@ authorSchema.pre("save", async function (next) {
 })
 
 
-module.exports = mongoose.model("auhor", authorSchema)
+module.exports = mongoose.model("author", authorSchema)

@@ -12,18 +12,21 @@ const bookSchema = mongoose.Schema({
         required: true,
         max: 512,  
     },
-    author:{
-        type: mongoose.Schema.Types.ObjectId, 
+    author_id:{
+        type: Number, 
         required: true, 
         ref:"author", 
     },
+    id:{
+        type:Number
+    }
 });
 
 
 const joiBook = joi.object({
-    _id: joi.any(),
+    _id: joi.any(), id: joi.any(),
     name: joi.string().max(512).min(3).required(),
-    author: joi.any().required(),  
+    author_id: joi.any().required(),  
 })
 
 bookSchema.pre("save", async function(next){
