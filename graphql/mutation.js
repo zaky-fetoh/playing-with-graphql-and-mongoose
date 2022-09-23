@@ -81,10 +81,12 @@ const RootMutation = new gql.GraphQLObjectType({
     fields:{
         author:{
             type: AuthorMutation,
+            resolve:()=>AuthorMutation,
         },
         book:{
             type:Book_mutation,
-        }
+            resolve: ()=> Book_mutation,
+        },
     }
 })
 
