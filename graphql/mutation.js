@@ -2,8 +2,9 @@ const gql = require("graphql")
 const types = require("./types")
 
 const bookModel = require("../model/book"); 
-const AuthorModel = require("../model/author");
 const personModel = require("../model/person");
+const AuthorModel = require("../model/author");
+const hasBookModel = require("../model/has_book");
 
 const Book_mutation = new gql.GraphQLObjectType({
     name: "mutation_ofBook", 
@@ -105,7 +106,33 @@ const PersonMutation = new gql.GraphQLObjectType({
 })
 
 
-co
+const HasMutation = new gql.GraphQLObjectType({
+    name: "hasBookMutaion", 
+    fields:()=>({
+        addHasBook:{
+            type: types.HasBookType, 
+            args:{
+                book_id: {type:gql.GraphQLInt},
+                preson_id:{type:gql.GraphQLString}, 
+                from:{type:gql.GraphQLInt},
+                to:{type:gql.GraphQLInt},
+            },
+            resovle:async(parent, args)=>{
+                return await hasBookModel.create(args);
+            },
+        deleteHasBook:{
+            type: gql.GraphQLInt, 
+            args:{
+                id:gql.GraphQLString,
+            },
+            resolve:async(parent, args)=>{
+                return await hasBookModel.deleteOne({
+                    _id: args.id, 
+                })
+            },
+        }}
+    })
+})
 
 
 
@@ -123,6 +150,10 @@ const RootMutation = new gql.GraphQLObjectType({
         person:{
             type: PersonMutation, 
             resolve : ()=> PersonMutation,
+        },
+        hasBook:{
+            type: HasMutation, 
+            resolve:()=> HasMutation,
         }
     }
 })
