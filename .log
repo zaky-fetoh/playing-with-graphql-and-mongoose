@@ -134,3 +134,39 @@ SerVerStarTed
 { book_id: 2, person_id: '632dbcbe44df5c91c213e469' }
 ::1 - - [Fri, 23 Sep 2022 15:31:06 GMT] "POST /graphql HTTP/1.1" 200 165 "-" "PostmanRuntime/7.29.0"
 SerVerStarTed
+{ book_id: 2, person_id: '632dbcbe44df5c91c213e469' }
+::1 - - [Fri, 23 Sep 2022 15:32:57 GMT] "POST /graphql HTTP/1.1" 200 70 "-" "PostmanRuntime/7.29.0"
+::1 - - [Fri, 23 Sep 2022 15:33:17 GMT] "GET /graphql?query=%7B%0A%20%20%0A%7D HTTP/1.1" 400 928168 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:33:19 GMT] "POST /graphql? HTTP/1.1" 200 26304 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:33:50 GMT] "POST /graphql? HTTP/1.1" 200 125 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:48:32 GMT] "POST /graphql? HTTP/1.1" 200 59 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:49:04 GMT] "POST /graphql? HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+::1 - - [Fri, 23 Sep 2022 15:51:27 GMT] "POST /graphql? HTTP/1.1" 200 115 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:51:45 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:52:05 GMT] "POST /graphql? HTTP/1.1" 400 104 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:52:24 GMT] "POST /graphql? HTTP/1.1" 200 106 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+::1 - - [Fri, 23 Sep 2022 15:54:48 GMT] "POST /graphql? HTTP/1.1" 200 106 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:55:18 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:56:39 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:56:58 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:56:58 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:56:58 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:56:59 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:56:59 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:56:59 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+::1 - - [Fri, 23 Sep 2022 15:57:00 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+dlt person
+::1 - - [Fri, 23 Sep 2022 15:58:10 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+dlt person
+::ffff:127.0.0.1 - - [Fri, 23 Sep 2022 15:59:49 GMT] "POST /graphql? HTTP/1.1" 200 215 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+::1 - - [Fri, 23 Sep 2022 16:05:17 GMT] "POST /graphql? HTTP/1.1" 200 115 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+dlt person
+::1 - - [Fri, 23 Sep 2022 16:05:38 GMT] "POST /graphql? HTTP/1.1" 200 41 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+dlt person
+::1 - - [Fri, 23 Sep 2022 16:06:15 GMT] "POST /graphql? HTTP/1.1" 200 38 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"

@@ -1,5 +1,8 @@
 const gql = require("graphql")
+const mongoose = require("mongoose");
+
 const types = require("./types")
+
 
 const bookModel = require("../model/book");
 const personModel = require("../model/person");
@@ -71,7 +74,7 @@ const AuthorMutation = new gql.GraphQLObjectType({
                 let results = await AuthorModel.deleteOne({
                     id: args.id,
                 });
-                return results;
+                return results.deletedCount;
             }
         }
     })
@@ -97,9 +100,10 @@ const PersonMutation = new gql.GraphQLObjectType({
                 id: { type: gql.GraphQLString, },
             },
             resolve: async (parent, args) => {
-                return await personModel.deleteOne({
-                    _id: args.id,
-                });
+                console.log("dlt person")
+                return (await personModel.deleteOne({
+                    _id: mongoose.Types.ObjectId(args.id),
+                })).deletedCount;
             }
         }
     }
@@ -131,9 +135,9 @@ const HasMutation = new gql.GraphQLObjectType({
                 id: { type: gql.GraphQLString },
             },
             resolve: async (parent, args) => {
-                return await hasBookModel.deleteOne({
+                return (await hasBookModel.deleteOne({
                     _id: args.id,
-                })
+                })).deletedCount
             },
         }
     })
