@@ -3,6 +3,7 @@ const gql = require("graphql");
 
 const bookModel = require("../model/book");
 const authorModel = require("../model/author");
+const personModel = require("../model/person");
 
 
 exports.RootQuery = new gql.GraphQLObjectType({
@@ -39,6 +40,12 @@ exports.RootQuery = new gql.GraphQLObjectType({
                     id: args.id,
                 })
             }
-        }
+        },
+        getPerson:{
+            type: gql.GraphQLList(types.PersonType), 
+            resolve:async()=>{
+                return await personModel.find({}); 
+            },
+        },
     }),
 });
