@@ -88,3 +88,8 @@ SerVerStarTed
 ::1 - - [Fri, 23 Sep 2022 09:42:05 GMT] "GET /graphql?query=%7B%0A%20%20getAuthors%7B%0A%20%20%20%20id%0A%20%20%20%20last_name%0A%20%20%7D%0A%7D HTTP/1.1" 200 928194 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
 ::1 - - [Fri, 23 Sep 2022 09:42:07 GMT] "POST /graphql? HTTP/1.1" 200 22226 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
 ::1 - - [Fri, 23 Sep 2022 09:43:17 GMT] "POST /graphql? HTTP/1.1" 200 56 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+SerVerStarTed
+::1 - - [Fri, 23 Sep 2022 11:11:47 GMT] "POST /graphql HTTP/1.1" 400 55 "-" "PostmanRuntime/7.29.0"
+::1 - - [Fri, 23 Sep 2022 11:11:58 GMT] "POST /graphql HTTP/1.1" 400 55 "-" "PostmanRuntime/7.29.0"
+::1 - - [Fri, 23 Sep 2022 11:12:28 GMT] "POST /graphql HTTP/1.1" 200 56 "-" "PostmanRuntime/7.29.0"
+::1 - - [Fri, 23 Sep 2022 11:18:15 GMT] "POST /graphql HTTP/1.1" 400 55 "-" "PostmanRuntime/7.29.0"

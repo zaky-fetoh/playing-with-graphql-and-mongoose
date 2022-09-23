@@ -76,6 +76,11 @@ const AuthorMutation = new gql.GraphQLObjectType({
 })
 
 
+const PersonMutation = new gql.GraphQLObjectType()
+
+
+
+
 const RootMutation = new gql.GraphQLObjectType({
     name: "RootMutation", 
     fields:{
