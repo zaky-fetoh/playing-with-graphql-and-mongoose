@@ -7,7 +7,7 @@ const hasBookSchema = mongoose.Schema({
         default: mongoose.Types.ObjectId,
     },
     book_id: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Number,
         required: true, ref: "book",
     },
     person_id: {
@@ -35,10 +35,11 @@ const joiHasBook = joi.object({
 
 hasBookSchema.pre("save", function (next) {
     const { error } = joiHasBook.validate(this._doc);
+    this.person_id = mongoose.Types.ObjectId(this.person_id)
     if (error) throw error;
     const Deadline = new Date(this.from)
     Deadline.setDate(Deadline.getDate() + 30);
-    if (Deadline < this.to) throw new Error("max rent period is 30 days only");
+    if (this.to <= Deadline) throw new Error("max rent period is 30 days only");
     next()
 })
 
