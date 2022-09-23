@@ -19,7 +19,7 @@ const personSchema = mongoose.Schema({
 const joiPerson = joi.object({
     first_name: joi.string().max(256).min(4).required(),
     last_name: joi.string().max(256).min(4).required(),
-    _id: any(), 
+    _id: joi.any(), 
 })
 
 
