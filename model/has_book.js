@@ -42,4 +42,4 @@ hasBookSchema.pre("save", function (next) {
     next()
 })
 
-module.exports = hasBookSchema.model("has-book", hasBookSchema);
+module.exports = mongoose.model("has-book", hasBookSchema);
